@@ -1,5 +1,15 @@
 
-            
+      setTimeout(function(){ alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"); }, 10000);
+      function randomIntFromInterval(min,max) //c'est incroyable qu'il n'y ai pas de fonction de ce genre en javascript
+          {
+          return Math.floor(Math.random()*(max-min+1)+min);
+          }
+      function changeCL()
+          { 
+          var tablo = [randomIntFromInterval(0,255),randomIntFromInterval(0,255),randomIntFromInterval(0,255)];
+          document.getElementById('rbw').style.color = `rgb(${tablo})`;
+          }
+      setInterval(changeCL,500);      
 
             function psych(){
                 document.body.style.backgroundColor = '#ff00ff';
