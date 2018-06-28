@@ -18,7 +18,6 @@
             function contrastfaible(){
                 normal();
                 document.body.style.color='#464646';
-                wof.textContent = "Mode normal";
             }
             function normal()
             {
@@ -96,15 +95,32 @@
      */       
 
 
+//Parce que les liens c'est pas mal aussi
 
-
-/*            var lienInverse = document.querySelector(".invertedMode")
+            var lienInverse = document.querySelector(".invertedMode")
             lienInverse.addEventListener("click",inversefct)
             function inversefct()
             {
-             if (lienInverse.textContent === "Inverted Mode")
-             {
-                
-             }   
+             if (lienInverse.textContent === "Mode Inverse")
+             {  normal();
+                inversion();
+                lienInverse.textContent = "Mode Normal"
+             } else {
+                normal();
+                lienInverse.textContent = "Mode Inverse"
+             }
             }
-*/
+            var lienContrast = document.querySelector(".contrastfaibleMode")
+            lienContrast.addEventListener("click",contrastfaibleMode)
+            function contrastfaibleMode()
+            {
+                if(lienContrast.textContent === "Mode Contraste Faible"){
+                    normal();
+                    contrastfaible();
+                    lienContrast.textContent = "Mode Normal"
+                } else {
+                    normal();
+                    lienContrast.textContent ="Mode Contraste Faible"
+                }
+
+            }

@@ -7,6 +7,12 @@ body
     line-height: 1.4;
     text-align: justify;
 }
+aside
+{
+    float: right;
+    font-size: 14px;
+    color: black;
+}
 .mfw
 {
     color: rgb(22, 160, 133);
@@ -134,7 +140,7 @@ small
 
 
 
-
+/*Partie en dessous absolument recopié du site original*/
 
 /* cyrillic-ext */
 @font-face {
